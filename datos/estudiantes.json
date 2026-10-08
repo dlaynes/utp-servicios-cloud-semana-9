@@ -1,0 +1,26 @@
+[
+  {
+    "codigo": "2026001",
+    "nombre": "Ana Rojas",
+    "carrera": "Ingenieria de Sistemas",
+    "semestre": "2026-1"
+  },
+  {
+    "codigo": "2026002",
+    "nombre": "Luis Campos",
+    "carrera": "Ciencia de Datos",
+    "semestre": "2026-1"
+  },
+  {
+    "codigo": "2026003",
+    "nombre": "Maria Quispe",
+    "carrera": "Redes y Comunicaciones",
+    "semestre": "2026-1"
+  },
+  {
+    "codigo": "2026004",
+    "nombre": "Diego Torres",
+    "carrera": "Ingenieria de Sistemas",
+    "semestre": "2026-2"
+  }
+]

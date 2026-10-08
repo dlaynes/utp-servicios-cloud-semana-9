@@ -1,0 +1,20 @@
+[
+  {
+    "codigo": "INFO101",
+    "nombre": "Introduccion a Servicios Cloud",
+    "carrera": "Ingenieria de Sistemas",
+    "creditos": 3
+  },
+  {
+    "codigo": "DATA201",
+    "nombre": "Analisis de Datos",
+    "carrera": "Ciencia de Datos",
+    "creditos": 4
+  },
+  {
+    "codigo": "REDE301",
+    "nombre": "Redes Computacionales",
+    "carrera": "Redes y Comunicaciones",
+    "creditos": 4
+  }
+]

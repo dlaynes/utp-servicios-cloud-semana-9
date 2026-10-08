@@ -1,0 +1,56 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: ./frontend/Dockerfile
+    ports:
+      - "3001:80"
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - universidad
+
+  api:
+    build:
+      context: .
+      dockerfile: ./api/Dockerfile
+    environment:
+      DATOS_PATH: /app/datos
+      API_PORT: "8000"
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./datos:/app/datos:ro
+    depends_on:
+      datos:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - universidad
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/salud')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+
+  datos:
+    image: nginx:1.25-alpine
+    volumes:
+      - ./datos:/usr/share/nginx/html:ro
+    ports:
+      - "8001:80"
+    restart: unless-stopped
+    networks:
+      - universidad
+    healthcheck:
+      test: ["CMD", "sh", "-c", "wget --spider http://localhost/estudiantes.json || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+networks:
+  universidad:
+    driver: bridge

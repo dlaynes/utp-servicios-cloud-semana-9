@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: datos-universidad
+data:
+  estudiantes.json: |
+    [
+      { "codigo": "2026001", "nombre": "Ana Rojas", "carrera": "Ingenieria de Sistemas", "semestre": "2026-1" },
+      { "codigo": "2026002", "nombre": "Luis Campos", "carrera": "Ciencia de Datos", "semestre": "2026-1" },
+      { "codigo": "2026003", "nombre": "Maria Quispe", "carrera": "Redes y Comunicaciones", "semestre": "2026-1" },
+      { "codigo": "2026004", "nombre": "Diego Torres", "carrera": "Ingenieria de Sistemas", "semestre": "2026-2" }
+    ]
+  cursos.json: |
+    [
+      { "codigo": "INFO101", "nombre": "Introduccion a Servicios Cloud", "carrera": "Ingenieria de Sistemas", "creditos": 3 },
+      { "codigo": "DATA201", "nombre": "Analisis de Datos", "carrera": "Ciencia de Datos", "creditos": 4 },
+      { "codigo": "REDE301", "nombre": "Redes Computacionales", "carrera": "Redes y Comunicaciones", "creditos": 4 }
+    ]
+  calificaciones.json: |
+    [
+      { "estudiante": "2026001", "curso": "INFO101", "nota": 17.5 },
+      { "estudiante": "2026002", "curso": "DATA201", "nota": 18.0 },
+      { "estudiante": "2026003", "curso": "REDE301", "nota": 15.5 },
+      { "estudiante": "2026004", "curso": "INFO101", "nota": 16.0 }
+    ]

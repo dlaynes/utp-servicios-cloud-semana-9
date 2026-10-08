@@ -1,0 +1,22 @@
+[
+  {
+    "estudiante": "2026001",
+    "curso": "INFO101",
+    "nota": 17.5
+  },
+  {
+    "estudiante": "2026002",
+    "curso": "DATA201",
+    "nota": 18.0
+  },
+  {
+    "estudiante": "2026003",
+    "curso": "REDE301",
+    "nota": 15.5
+  },
+  {
+    "estudiante": "2026004",
+    "curso": "INFO101",
+    "nota": 16.0
+  }
+]

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-universidad
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend-universidad
+  template:
+    metadata:
+      labels:
+        app: frontend-universidad
+    spec:
+      containers:
+        - name: frontend
+          image: frontend-universidad:1.0.0
+          ports:
+            - containerPort: 80

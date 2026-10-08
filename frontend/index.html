@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Universidad Cloud - Consulta académica</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <h1>Universidad Cloud</h1>
+      <p>Consulta de información académica</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>Estado de la plataforma</h2>
+      <p id="estado" class="estado Pendiente">Conectando con la API...</p>
+    </section>
+
+    <section class="panel">
+      <h2>Resumen académico</h2>
+      <div class="cards">
+        <article class="card"><span>Estudiantes</span><strong id="card-estudiantes">--</strong></article>
+        <article class="card"><span>Cursos</span><strong id="card-cursos">--</strong></article>
+        <article class="card"><span>Promedio</span><strong id="card-promedio">--</strong></article>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Cursos disponibles</h2>
+      <div id="cursos" class="lista">Cargando...</div>
+    </section>
+
+    <section class="panel">
+      <h2>Estudiantes registrados</h2>
+      <table>
+        <thead>
+          <tr><th>Código</th><th>Nombre</th><th>Carrera</th></tr>
+        </thead>
+        <tbody id="estudiantes"><tr><td colspan="3">Cargando...</td></tr></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p>Semana 9 - Servicios Cloud</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

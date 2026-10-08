@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="700" viewBox="0 0 1100 700">
+  <rect width="1100" height="700" fill="#f8fafc"/>
+  <text x="550" y="50" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="30" font-weight="700" fill="#111827">Arquitectura del proyecto</text>
+
+  <rect x="60" y="180" width="180" height="100" rx="18" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="150" y="220" text-anchor="middle" font-size="20" font-family="Segoe UI, sans-serif" fill="#0c4a6e">Usuario</text>
+  <text x="150" y="250" text-anchor="middle" font-size="15" font-family="Segoe UI, sans-serif" fill="#075985">Navegador</text>
+
+  <rect x="330" y="180" width="200" height="100" rx="18" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="430" y="220" text-anchor="middle" font-size="20" font-family="Segoe UI, sans-serif" fill="#4c1d95">Frontend</text>
+  <text x="430" y="250" text-anchor="middle" font-size="15" font-family="Segoe UI, sans-serif" fill="#5b21b6">Nginx</text>
+
+  <rect x="620" y="180" width="200" height="100" rx="18" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+  <text x="720" y="220" text-anchor="middle" font-size="20" font-family="Segoe UI, sans-serif" fill="#7f1d1d">API</text>
+  <text x="720" y="250" text-anchor="middle" font-size="15" font-family="Segoe UI, sans-serif" fill="#991b1b">Flask + Gunicorn</text>
+
+  <rect x="900" y="180" width="180" height="100" rx="18" fill="#ecfccb" stroke="#65a30d" stroke-width="2"/>
+  <text x="990" y="220" text-anchor="middle" font-size="20" font-family="Segoe UI, sans-serif" fill="#14532d">Datos</text>
+  <text x="990" y="250" text-anchor="middle" font-size="15" font-family="Segoe UI, sans-serif" fill="#166534">JSON local</text>
+
+  <rect x="120" y="380" width="860" height="180" rx="20" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/>
+  <text x="550" y="420" text-anchor="middle" font-size="20" font-family="Segoe UI, sans-serif" fill="#3730a3">Orquestación</text>
+  <text x="550" y="450" text-anchor="middle" font-size="18" font-family="Segoe UI, sans-serif" fill="#4338ca">Docker Compose / Kubernetes</text>
+  <text x="550" y="480" text-anchor="middle" font-size="16" font-family="Segoe UI, sans-serif" fill="#4338ca">Estado deseado, escalamiento y recuperación</text>
+
+  <line x1="240" y1="230" x2="330" y2="230" stroke="#334155" stroke-width="4"/>
+  <polygon points="330,230 315,223 315,237" fill="#334155"/>
+
+  <line x1="530" y1="230" x2="620" y2="230" stroke="#334155" stroke-width="4"/>
+  <polygon points="620,230 605,223 605,237" fill="#334155"/>
+
+  <line x1="820" y1="230" x2="900" y2="230" stroke="#334155" stroke-width="4"/>
+  <polygon points="900,230 885,223 885,237" fill="#334155"/>
+
+  <text x="270" y="205" text-anchor="middle" font-size="14" font-family="Segoe UI, sans-serif" fill="#334155">HTTP</text>
+  <text x="570" y="205" text-anchor="middle" font-size="14" font-family="Segoe UI, sans-serif" fill="#334155">/api/*</text>
+  <text x="865" y="205" text-anchor="middle" font-size="14" font-family="Segoe UI, sans-serif" fill="#334155">JSON</text>
+
+  <text x="550" y="640" text-anchor="middle" font-size="16" font-family="Segoe UI, sans-serif" fill="#1f2937">Entorno académico local</text>
+  <text x="550" y="665" text-anchor="middle" font-size="14" font-family="Segoe UI, sans-serif" fill="#334155">Docker Desktop / Kubernetes local</text>
+</svg>

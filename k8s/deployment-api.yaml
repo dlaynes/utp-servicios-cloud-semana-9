@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-universidad
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: api-universidad
+  template:
+    metadata:
+      labels:
+        app: api-universidad
+    spec:
+      containers:
+        - name: api
+          image: api-universidad:1.0.0
+          env:
+            - name: DATOS_PATH
+              value: /app/datos
+            - name: API_PORT
+              value: "8000"
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8000
+          readinessProbe:
+            httpGet:
+              path: /api/salud
+              port: 8000
+          volumeMounts:
+            - name: datos
+              mountPath: /app/datos
+      volumes:
+        - name: datos
+          configMap:
+            name: datos-universidad
